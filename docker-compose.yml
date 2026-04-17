@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  subject-allocation-app:
+    build: .
+    container_name: subject-allocation-app
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
